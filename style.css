@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.menu-bar{
+    text-align: center;
+    background: rgb(1, 71, 1);
+    color: white;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding:15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar .bx{
+    margin-right: 8px;
+}
+
+.menu-bar .active{
+    background: rgb(52, 250, 52);
+    border-radius: 3px;
+}
+
+.menu-bar ul li:hover{
+    background: rgb(52, 250, 52);
+    border-radius: 3px;
+}
+
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(1, 71, 1);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    text-align: left;
+    background: transparent;
+    border-bottom: 1px dotted;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+
+
+.bx-chevron-right{
+    float: right;
+    /* display: block; */
+}
